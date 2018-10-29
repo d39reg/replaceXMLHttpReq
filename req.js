@@ -1,12 +1,12 @@
 (function () {
     "use strict";
 
-    // save original object bacouse will not could send request
+    // save original object because will not could send request
     var XHR = window.XMLHttpRequest;
 
     window.XMLHttpRequest = function () {
 
-        // создаем экземпляр оригинала
+        // create instanceof for request
         var o = new XHR(),
             t = this,
             reassignAllProperties = function reassign() {
