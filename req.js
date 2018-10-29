@@ -1,7 +1,7 @@
 (function () {
     "use strict";
 
-    // сохраним оригинальный объект, т.к. без него не сможем слат запросы
+    // save original object bacouse will not could send request
     var XHR = window.XMLHttpRequest;
 
     window.XMLHttpRequest = function () {
